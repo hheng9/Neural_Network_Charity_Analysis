@@ -16,7 +16,23 @@
 * ### The EIN, NAME, CLASSIFICATION, SPECIAL_CONSIDERATIONS columns are not target and have been removed from the input data.
 ![D3](https://user-images.githubusercontent.com/118647523/234758142-b89bd3a4-bd3d-4d98-b98d-ffe5a19036b3.png)
 
-##Compiling, Training, and Evaluating the Model
+## Compiling, Training, and Evaluating the Model
 ### How many neurons, layers, and activation functions did you select for your neural network model, and why?
+### The model has five layers, including the output layer. The input layer is not explicitly defined, as its size is determined by the shape of the input data. 
+* ### The first hidden layer has 80 neurons. 
+* ### The second hidden layer has 40 neurons. 
+* ### The third hidden layer has 30 neurons.
+* ### The fourth hidden layer has 20 neurons. The output layer has a single neuron.
+### The activation functions used in the model are sigmoid, relu, and linear. Sigmoid and relu are common choices for activation functions in deep neural networks, with sigmoid being useful for binary classification problems and relu being useful for general nonlinear problems. Linear activation is typically used for the output layer when predicting continuous values, such as in this regression problem.
+### The number of neurons and layers in a neural network model depends on various factors, including the complexity of the problem, the size of the dataset, and the computational resources available. In this case, the number of neurons and layers was chosen based on experimentation and tuning to achieve good performance on the training and validation sets while avoiding overfitting.
+![D4](https://user-images.githubusercontent.com/118647523/234758764-539db664-5bfc-4483-b102-da5eefd49cb7.png)
+
 ### Were you able to achieve the target model performance?
+### The model achieved a loss of 8.2242 and an accuracy of 0.4668, which can be used as a reference for further comparison or improvement.
+![D5](https://user-images.githubusercontent.com/118647523/234759086-8727f6d2-e202-435f-b631-2e5b29151cb1.png)
+
+
 ### What steps did you take to try and increase model performance?
+### In order to improve the performance of the model, I implemented several modifications such as reducing the number of columns by dropping irrelevant features, creating additional bins to capture rare occurrences in the dataset, decreasing the bin sizes to increase the granularity of the data, increasing the number of neurons in the hidden layers to enhance the model's capacity to capture complex patterns, using different activation functions to better suit the data characteristics, and increasing the number of epochs to allow for more iterations during training. These adjustments were aimed at optimizing the model's performance by leveraging domain-specific knowledge and machine learning best practices.
+
+## Summary 
